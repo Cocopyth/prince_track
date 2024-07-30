@@ -21,7 +21,7 @@ To build the container, follow these steps:
 3. Build the container using the definition file:
 
    ```bash
-   apptainer build FijiPython.sif FijiPython.def
+   apptainer build FijiPython.sif prince_track.def
 ```
 On Snellius specific instructions are
 Change the temporary file directory with
