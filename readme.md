@@ -19,6 +19,11 @@ To build the container, follow these steps:
    cd FijiPythonContainer
 
 3. Build the container using the definition file:
-```bash
-apptainer build FijiPython.sif FijiPython.def
+   ```bash
+   apptainer build FijiPython.sif FijiPython.def
 
+On Snellius specific instructions are
+Change the temporary file directory with
+   ```bash
+   export APPTAINER_TMPDIR=$(mktemp -d /tmp/cbisotXXXX)
+   chmod o+rww /tmp/
