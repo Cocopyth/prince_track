@@ -15,8 +15,8 @@ To build the container, follow these steps:
 2. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/FijiPythonContainer.git
-   cd FijiPythonContainer
+   git clone https://github.com/Cocopyth/prince_track.git
+   cd prince_track
 
 3. Build the container using the definition file:
 
