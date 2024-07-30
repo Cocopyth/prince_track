@@ -19,11 +19,31 @@ To build the container, follow these steps:
    cd FijiPythonContainer
 
 3. Build the container using the definition file:
+
    ```bash
    apptainer build FijiPython.sif FijiPython.def
-
+```
 On Snellius specific instructions are
 Change the temporary file directory with
+
    ```bash
    export APPTAINER_TMPDIR=$(mktemp -d /tmp/cbisotXXXX)
    chmod o+rww /tmp/
+```
+## To test on a dataset
+
+   ```bash
+   bash test_dataset/download_dataset.sh $PATH_WHERE_TO_DOWNLOAD
+```
+example on snellius
+
+   ```bash
+   export PATH_WHERE_TO_DOWNLOAD=/scratch-shared/amftrack/test_dataset
+   bash test_dataset/download_dataset.sh $PATH_WHERE_TO_DOWNLOAD
+   export CODE_BASE_PATH=$(pwd)
+   bash test_fiji/test.sh
+```
+
+
+
+
