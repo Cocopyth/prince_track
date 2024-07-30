@@ -15,26 +15,28 @@ To build the container, follow these steps:
 2. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/FijiPythonContainer.git
-   cd FijiPythonContainer
+   git clone https://github.com/Cocopyth/prince_track.git
+   cd prince_track
 
 3. Build the container using the definition file:
 
    ```bash
-   apptainer build FijiPython.sif FijiPython.def
-```
+   apptainer build myimage.sif prince_track.def
+   ```
+
 On Snellius specific instructions are
 Change the temporary file directory with
 
    ```bash
    export APPTAINER_TMPDIR=$(mktemp -d /tmp/cbisotXXXX)
    chmod o+rww /tmp/
-```
+   ```
+
 ## To test on a dataset
 
    ```bash
    bash test_dataset/download_dataset.sh $PATH_WHERE_TO_DOWNLOAD
-```
+   ```
 example on snellius
 
    ```bash
